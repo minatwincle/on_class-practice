@@ -1,0 +1,413 @@
+@charset "utf-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* --/reset css */
+
+
+
+
+
+body {
+  color: #54514c;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+
+
+
+
+/* header-- */
+header, .top-img, .top-img img, main, footer {
+  width: 100%;
+}
+header {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+}
+h1 img {
+  width: 200px;
+  margin-top: 18px;
+  margin-left: 15px;
+}
+header nav {
+  display: none;
+}
+.top-img img {
+  margin-top: 60px;
+  vertical-align: bottom;
+}
+/* --/header */
+
+
+
+
+
+/* main-- */
+main {
+  margin-bottom: 30px;
+}
+main figure img {
+  width: 100%;
+}
+main h2 {
+  height: 40px;
+  background-color: #b99566;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  padding-left: 15px;
+}
+main dl dt:nth-of-type(even), main dl dd:nth-of-type(even) {
+  background-color: #f5f3f0;
+}
+main dt {
+  font-size: 0.75rem;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+main dd {
+  font-size: 0.85rem;
+  padding-left: 12px;
+  line-height: 1.95rem
+}
+main dd::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: transparent solid 4px;
+  border-left: #54514c solid 8px;
+  margin-bottom: 2px
+}
+article {
+  padding: 10px 10px;
+}
+article figure {
+  margin-bottom: 10px;
+}
+.text-box {
+  height: 55px;
+  border-left: #402805 solid 4px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-box ul {
+  list-style: none;
+  display: flex;
+}
+.text-box li {
+  height: 20px;
+  background-color: #b99566;
+  border-radius: 0.4rem;
+  color: #fff;
+  font-size: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.text-box li+li {
+  margin-left: 10px;
+}
+article p {
+  padding-left: 10px;
+  font-size: 0.9rem;
+}
+article p::before {
+  content: "- ";
+  margin-right: 5px;
+}
+/* --/main */
+
+
+
+
+
+/* footer-- */
+footer{
+  text-align: center;
+}
+.footer-logo img {
+  width: 160px;
+}
+footer ul {
+  list-style: none;
+  height: 260px;
+  background-color: #54514c;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer ul a {
+  text-decoration: none;
+  display: inline-block;
+  width: 282px;
+  height: 32px;
+  border: #fff solid 1px;
+  border-radius: 0.15rem;
+  line-height: 30px;
+  color: #fff;
+  font-size: 0.9rem;
+  transition: 0.5s
+}
+footer ul a:hover {
+  background-color: #fff;
+  color: #54514c;
+}
+.copy {
+  height: 78px;
+  padding: 15px 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+.copy small {
+  font-size: 0.4rem;
+}
+/* --/footer */
+
+
+
+
+
+/* media-- */
+@media screen and (min-width: 768px) {
+  header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 img {
+    width: 250px;
+    margin-top: 1px;
+    margin-left: 25px;
+  } 
+  header nav {
+    display: inline-block;
+  }
+  nav ul {
+    display: flex;
+    gap: 5px;
+    margin-right: 35px;
+  }
+  nav ul a {
+    text-decoration: none;
+    color: #9c9b98;
+    letter-spacing: 0.025rem;
+    padding: 8px 18px;
+    border-radius: 0.2rem;
+    transition: color 0.5s;
+  }
+  nav ul a:hover {
+    background-color: #B99566;
+    color: #fff;
+  }
+  .top-img img {
+    margin-top: 80px;
+    margin-bottom: 30px
+  }
+  main {
+    margin-bottom: 80px;
+  }
+  main h2 {
+    padding-left: 20px;
+    font-size: 1.2rem;
+  }
+  main dl {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  main dt {
+    width: 100px;
+    height: 35px;
+    font-size: 0.9rem;
+    line-height: 35px;
+    padding-left: 10px;
+    padding-top: 0;
+  }
+  main dd {
+    width: calc(100% - 100px);
+    height: 35px;
+    font-size: 0.9rem;
+    padding-left: 0px;
+    line-height: 35px;
+  }
+  main dd::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border: transparent solid 5px;
+    border-left: #54514c solid 8px;
+    margin-bottom: 0;
+    margin-right: 5px;
+  }
+  section {
+    margin-bottom: 50px;
+  }
+  .gourmet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding: 0 10px;
+  }
+  article {
+    padding: 10px 0;
+  }
+  article h3 {
+    font-size: 1.2rem;
+  }
+  .text-box li {
+    height: 22px;
+    color: #fff;
+    font-size: 0.8rem;
+  }
+  article p {
+    font-size: 1.1rem;
+  }
+  article p::before {
+    content: "- ";
+    margin-right: 5px;
+  }
+  .footer-logo img {
+    width: 200px;
+  }
+  footer ul {
+    height: 72px;
+    padding: 20px 0;
+    display: block;
+  }
+  footer ul li {
+    display: inline-block;
+  }
+  footer ul li+li {
+    margin-left: 19px;
+  }
+  footer ul a {
+    width: 122px;
+    font-size: 1.05rem;
+  }
+  .copy {
+    height: 88px;
+    padding: 20px 0 11px;
+  }
+  .copy small {
+    font-size: 0.75rem;
+  }
+  
+}
+
+@media screen and (min-width: 1000px) {
+  .top-img {
+    text-align: center;
+  }
+  .top-img img {
+    max-width: 1500px;
+  }
+  main {
+    max-width: 1000px;
+    margin: 0 auto 80px;
+  }
+  .gourmet {
+    padding: 0;
+  }
+
+}
