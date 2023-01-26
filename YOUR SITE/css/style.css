@@ -1,0 +1,244 @@
+@charset "utf-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* ここまでリセットCSS */
+
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  width: 1130px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 img {
+  width: 275px;
+  padding: 8px 0;
+}
+
+.tell-contact {
+  display: inline-block;
+  margin: 25px 0;
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: lighter;
+  color: #6C757D;
+  margin-bottom: 8px;
+}
+
+.tell-contact p {
+  color: #6C757D;
+  font-size: 32px;
+  font-weight: bolder;
+}
+
+.web-contact {
+  width: 115px;
+  height: 50px;
+  margin: 25px 15px 25px 25px;
+  border: none;
+  border-radius: 0.3em;
+  background-color: #6C757D;
+  font-size: 19px;
+  color: white;
+  padding-top: 3px;
+  cursor: pointer;
+  transition: 30ms;
+}
+
+.web-contact:hover {
+  background-color: #5A6268;
+}
+
+.contact-box {
+  display: flex;
+}
+
+nav {
+  background-color: #343A40;
+  height: 57px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  padding-top: 4px;
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9fa3a1;
+  text-decoration: none;
+  width: 120px;
+  height: 50px;
+  transition: 30ms;
+}
+
+nav li a:hover {
+  color: #D9DFDB;
+}
+
+.top-image {
+  background-image: url(../image/top-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.container {
+  width: 1130px;
+  margin: 0 auto;
+}
+
+.top-image .container {
+  text-align: right;
+}
+
+.text-container {
+  display: inline-block;
+  text-align: left;
+  margin-top: 65px;
+  margin-right: 15px;
+  padding: 23px 17px;
+  width: 555px;
+  height: 300px;
+  background-color: white;
+  border: solid 1px #dfdfdf;
+  border-radius: 0.3em;
+}
+
+h3 {
+  font-size: 55px;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+.text-container p:first-of-type {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.5em;
+  height: 125px;
+  border-bottom: #dfdfdf solid 1px;
+  margin-bottom: 17px;
+}
+
+.text-container p:nth-of-type(2) {
+  font-size: 13px;
+  font-weight: normal;
+}
