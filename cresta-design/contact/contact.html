@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Cresta Design</title>
+  <link rel="stylesheet" href="../css/style2.css">
+  <script src="../js/jquery-3.6.3.min.js"></script>
+  <script>
+    $(function(){
+      $('.burger, .main-nav li a').on('click',function(){
+        $('.burger').toggleClass('drop');
+        $('.main-nav ul').fadeToggle(300);
+        $('body').toggleClass('noscroll');
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <header>
+    <div class="main-nav">
+      <h1><a href="../index.html">Cresta Design</a></h1>
+      <nav>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="../index.html #concept">Concept</a></li>
+          <li><a href="../index.html #works">Works</a></li>
+          <li><a href="../index.html #service">Service</a></li>
+          <li><a href="../index.html #contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h2>Contact</h2>
+    <div class="title"><span>Contact us</span></div>
+  </header>
+  <main class="contact">
+    <form action="../index.html" method="post">
+      <dl>
+        <dt>お問い合わせ内容</dt>
+        <dd>
+          <input type="radio" id="document" name="radio" value="資料請求"><label class="radio-button" for="document">資料請求</label>
+          <input type="radio" id="tell" name="radio" value="お電話でのご相談を希望"><label class="radio-button" for="tell">お電話でのご相談を希望</label>
+          <input type="radio" id="application" name="radio" value="申し込み"><label class="radio-button" for="application">申し込み</label>
+        </dd>
+        <dt><label for="manager">担当者名</label></dt>
+        <dd><input type="text" id="manager"></dd>
+        <dt><label for="number">電話番号</label></dt>
+        <dd><input type="text" id="number"></dd>
+        <dt><label for="mail">メールアドレス</label></dt>
+        <dd><input type="text" id="mail"></dd>
+        <dt><label for="other">その他</label></dt>
+        <dd><textarea name="other" id="other" cols="90" rows="10"></textarea></dd>
+      </dl>
+      <div class="submit-button"><input type="submit" value="submit"></div>
+    </form>
+  </main>
+  <footer>
+    <p><small>&copy;cresta.design all rights reserved</small></p>
+  </footer>
+</body>
+</html>
