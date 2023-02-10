@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cresta Design</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/jquery.bgswitcher.js"></script>
+  <script>
+    jQuery(function($) {
+        $('header').bgSwitcher({
+            images: ['image/fv-bgi_01@2x.jpg','image/fv-bgi_02@2x.jpg','image/fv-bgi_03@2x.jpg'], 
+        });
+    });
+    $(function(){
+    $('a[href^="#"]').click(function(){
+      var adjust = 0;
+      var speed = 400;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top + adjust;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+      });
+    });
+    $(function(){
+      $('.burger, .title_nav li a').on('click',function(){
+        $('.burger').toggleClass('drop');
+        $('.title_nav ul').fadeToggle(300);
+        $('body').toggleClass('noscroll');
+      });
+    });
+    $(function (){
+      $(window).scroll(function (){
+        const scroll = $(window).scrollTop();
+
+        $('.fadein').each(function (){
+          if (scroll > 1000){
+            $(this).addClass("head-fadein")
+          } else {
+            $(this).removeClass("head-fadein")
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="title_nav">
+      <h1><a href="index.html">Cresta Design</a></h1>
+      <nav>
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul>
+          <li><a href="#concept">Concept</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="fadein">
+      <h1><a href="#">Cresta Dsign</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#concept">Concept</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="first-view">
+      <h2>Design for Smile.</h2>
+      <p>快適なオフィスをデザインする</p>
+    </div>
+  </header>
+  <main>
+    <section class="concept" id="concept">
+      <h3>CONCEPT</h3>
+      <h4>”働きたくなる空間”をデザインすることで<br>人々を幸せにする。</h4>
+      <div class="concept-container">
+        <p>私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta Designだからこそできる空間デザインを提供させていただきます。</p>
+        <figure><img src="image/concept-image@2x.jpg" alt="オフィスイメージ"></figure>
+      </div>
+      <div class="content-title-odd"><span>Our Concept</span></div>
+    </section>
+    <section class="works" id="works">
+      <div class="works-wrapper">
+        <h3>Works</h3>
+        <div class="works-container">
+          <div class="works-box">
+            <figure><img src="image/card-img01@2x.jpg" alt="デザインサンプル"></figure>
+            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+          <div class="works-box">
+            <figure><img src="image/card-img02@2x.jpg" alt="デザインサンプル"></figure>
+            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にした</p>
+          </div>
+          <div class="works-box">
+            <figure><img src="image/card-img03@2x.jpg" alt="デザインサンプル"></figure>
+            <p>新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+          </div>
+        </div>
+        <p class="button"><a href="#">View more</a></p>
+        <div class="content-title-even"><span>Our Works</span></div>
+      </div>
+    </section>
+    <section class="service" id="service">
+      <h3>Service</h3>
+      <ul>
+        <li><a href="#">Hearing</a></li>
+        <li><a href="#">Planning</a></li>
+        <li><a href="#">Direction</a></li>
+      </ul>
+      <div class="content-title-odd"><span>Our Service</span></div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <h3>Contact</h3>
+        <h4>お気軽にご相談ください。</h4>
+        <p><a href="contact/contact.html">Contact</a></p>
+        <div class="content-title-even"><span>Contact us</span></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><small>&copy;cresta.design all rights reserved</small></p>
+  </footer>
+</body>
+</html>

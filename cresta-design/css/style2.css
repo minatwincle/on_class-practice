@@ -1,0 +1,416 @@
+@charset "utf-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* --/reset css */
+
+
+
+body {
+  font-family: "Noto_Serif", "Noto_Serif JP", serif;
+}
+
+
+
+/* header-- */
+header {
+  height: 500px;
+  background: url("../image/contact-page-bgi@2x.jpg") no-repeat right / cover;
+  position: relative;
+}
+h1 a {
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: bold;
+  font-family: serif;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 100px;
+}
+nav ul {
+  display: flex;
+  padding-right: 100px;
+  gap: 3px;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 8px 15px;
+  letter-spacing: 0.1rem;
+}
+nav a::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: 0.4s;
+}
+nav a:hover::after {
+  transform: scaleX(95%)
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+header h2 {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 4rem;
+  letter-spacing: 0.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%)
+}
+.title span {
+  font-size: 8rem;
+  font-weight: bolder;
+  color:#fff;
+  opacity: 0.1;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+/* --/header */
+
+
+
+/* main-- */
+.contact {
+  max-width: 1000px;
+  width: 100%;
+  margin: 120px auto 120px;
+}
+.contact form {
+  font-size: 1.3rem;
+  font-family: "meiryo", "メイリオ";
+  color: #181818;
+}
+.contact form dt {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.contact form dd {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+#manager, #number, #mail, #other {
+  width: 100%;
+  font-size: 1.3rem;
+}
+.contact input[type=radio] {
+  display: none;
+}
+.radio-button {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.radio-button::after, .radio-button::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  }
+.radio-button::after {
+  height: 18px;
+  width: 18px;
+  border: 2px solid #ccc;
+  border-radius: 40%;
+  left: -5px;
+  transform: translateY(-50%);
+}
+.radio-button::before {
+  height: 10px;
+  width: 18px;
+  border-left: 5px solid #1414f8;
+  border-bottom: 5px solid #1414f8;
+  border-radius: 30%;
+  left: 2px;
+  transform: rotate(-45deg) translateY(-100%);
+  z-index: 1;
+  opacity: 0;
+}
+input[type=radio]:checked+.radio-button::before {
+  opacity:1;
+}
+.submit-button {
+  text-align: center;
+  padding-top: 60px;
+}
+input[type=submit] {
+  width: 300px;
+  height: 80px;
+  border-radius: 40px;
+  border: none;
+  font-size: 1.5rem;
+  font-family: "Noto_Serif", "Noto_Serif JP", serif;
+  font-weight: bold;
+  background-color: #F7D43F;
+  box-shadow: 0 0 15px 0 rgb(66, 66, 66);
+  transition: 0.2s;
+}
+input[type=submit]:hover {
+  background-color: #887522;
+  color: #fff;
+}
+
+
+
+/* footer-- */
+footer {
+  height: 100px;
+  text-align: center;
+}
+footer p {
+  font-size: 1.5rem;
+  padding-top: 50px;
+}
+/* --/footer */
+
+
+@media screen and (max-width: 1000px) {
+  h1 a {
+    margin-left: 50px;
+  }  
+  nav ul {
+    padding-right: 10px;
+  }
+  nav a {
+    padding: 8px 8px;
+  }
+  .contact form dd {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  body.noscroll {
+    overflow: hidden;
+  }
+  header {
+    height: 380px;
+  }
+  h1 a {
+    font-size: 1.8rem;
+    margin-left: 20px;
+  }  
+  h3 {
+    font-size: 2.2rem;
+  }
+  h3::after {
+    height: 4px;
+    width: 100px;
+    margin: 0 0 15px 15px;
+  }
+  .main-nav {
+    background-color: transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 5;
+  }
+  .burger {
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .drop {
+    z-index: 6;
+  }
+  .burger span {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  .burger span:nth-child(1) {
+    top: 0;
+    transition: .2s
+  }
+  .burger span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%)
+  }
+  .burger span:nth-child(3) {
+    bottom: 0;
+    transition: .2s;
+  }
+  .drop span:nth-child(1) {
+    top: 50%;
+    transform: rotate(135deg) translateY(75%);
+  }
+  .drop span:nth-child(2) {
+    opacity: 0;
+  }
+  .drop span:nth-child(3) {
+    bottom: 50%;
+    transform: rotate(-135deg) translateY(-75%);
+  }
+  nav ul {
+    display: none;
+  }
+  .main-nav ul {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    top:0;
+    left: 0;
+    padding-top: 180px;
+    padding-right: 0;
+    background-color: #2B2F33;
+    text-align: center;
+  }
+  .main-nav ul li a {
+    display: inline-block;
+    margin: 20px 0;
+  }
+  header h2 {
+    font-size: 2.5rem;
+    top: 50%;
+  }
+  .title span {
+    font-size: 3.5rem;
+  }
+  .contact {
+    margin: 80px auto;
+  }
+  .contact form {
+    font-size: .9rem;
+    padding: 0 10px;
+  }
+  .contact form dd {
+    padding-left: 0;
+  }
+  #manager, #number, #mail, #other {
+    font-size: .9rem;
+  }
+  .radio-button {
+    display: block;
+    padding: 10px 0 10px 20px;
+  }
+  .submit-button {
+    padding-top: 30px;
+  }
+  input[type=submit] {
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: .9rem;
+  }
+  footer p {
+    font-size: .9rem;
+  }
+}

@@ -1,0 +1,717 @@
+@charset "utf-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* --/reset css */
+
+
+
+body {
+  font-family: "Noto_Serif", "Noto_Serif JP", serif;
+}
+
+
+
+/* header-- */
+header {
+  height: 1000px;
+  background: no-repeat center / cover;
+  position: relative;
+}
+h1 a {
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: bold;
+  font-family: serif;
+  color: #fff;
+  text-decoration: none;
+  margin-left: 100px;
+}
+nav ul {
+  display: flex;
+  padding-right: 100px;
+  gap: 3px;
+}
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 8px 15px;
+  letter-spacing: 0.1rem;
+}
+nav a::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: 0.4s;
+}
+nav a:hover::after {
+  transform: scaleX(95%)
+}
+.title_nav, .fadein {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+.humberger {
+  display: none;
+}
+.fadein {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100px;
+  background-color: #2B2F33;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s, visibility 1s;
+}
+.head-fadein {
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;
+}
+.first-view {
+  color: #fff;
+  position: absolute;
+  top: 550px;
+  left: 160px;
+}
+.first-view h2 {
+  font-size: 6.5rem;
+  font-weight: 900;
+  letter-spacing: 0.28rem;
+}
+.first-view p {
+  font-size:3rem;
+  font-weight:bold;
+  font-family: sans-serif;
+  padding-left: 4.5rem;
+  padding-top: 2.8rem;
+  transform: scale(90%,120%);
+}
+/* --/header */
+
+
+
+/* main-- */
+main {
+  position: relative;
+}
+h3 {
+  font-size: 4rem;
+  color: #282F35;
+  margin: 0 30px;
+}
+section:nth-child(even) h3 {
+  color: #fff;
+}
+h3::after {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 270px;
+  background-color: #282F35;
+  margin: 0 0 20px 30px;
+}
+section:nth-child(even) h3::after {
+  background-color: #fff;
+}
+section {
+  position: relative;
+  padding: 120px 0 170px;
+}
+.content-title-odd span {
+  font-size: 8rem;
+  font-weight: bolder;
+  color:#ccc;
+  opacity: 0.2;
+}
+.content-title-even span {
+  font-size: 8rem;
+  font-weight: bolder;
+  color:#fff;
+  opacity: 0.1;
+}
+
+  /* concept-- */
+.concept {
+  max-width: 1000px;
+  width: 100%;
+  margin:0 auto;
+}
+.concept h4 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #171717;
+  font-family: "Meiryo", "メイリオ";
+  line-height: 3.5rem;
+  margin: 70px 0 50px;
+}
+.concept-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.concept-container p {
+  width: 450px;
+  font-family: "メイリオ";
+  font-weight: bold;
+  line-height: 2rem;
+}
+.concept .content-title-odd {
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+}
+  /* --/concept */
+
+  /* works-- */
+.works {
+  width: 100%;
+  height: 980px;
+  background: url(../image/works-bgi@2x.jpg) no-repeat center / cover;
+}
+.works-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  height:860px;
+  margin:0 auto;
+  position: relative;
+}
+.works h3 {
+  text-align: right;
+}
+.works-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 95px;
+}
+.works-box {
+  width: 320px;
+  margin-bottom: 20px;
+}
+.works-box figure img {
+  vertical-align: bottom;
+}
+.works-box p {
+  height: 135px;
+  background-color: #fff;
+  padding: 25px 20px;
+  font-family: "メイリオ";
+  line-height: 1.8rem;
+}
+.works .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+.works .button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 235px;
+  background-color: #F7D43F;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bolder;
+  color: #000;
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+.works .button a:hover {
+  background-color: #887522;
+  color: #fff;
+}
+.works .content-title-even {
+  position: absolute;
+  bottom: 40px;
+  left: -50px;
+}
+  /* --/works */
+
+  /* service-- */
+.service {
+  max-width: 1000px;
+  width: 100%;
+  margin:0 auto;
+  position: static;
+  padding-bottom: 100px;
+}
+.service h3 {
+  margin-bottom: 95px;
+}
+.service ul {
+  display: grid;
+  list-style: none;
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.service li {
+  position: relative;
+}
+.service li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 320px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.3rem;
+}
+.service li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+}
+.service li a:hover::after {
+  background-color: #000;
+  opacity: 0.5;
+}
+.service li:nth-child(1) a {
+  background: url(../image/service-img01@2x.jpg) no-repeat center / cover;
+}
+.service li:nth-child(2) a {
+  background: url(../image/service-img02@2x.jpg) no-repeat center / cover;
+}
+.service li:nth-child(3) a {
+  background: url(../image/sevice-img03@2x.jpg) no-repeat center / cover;
+}
+.service .content-title-odd {
+  padding-top: 400px;
+  text-align: right;
+}
+  /* --/service */
+
+  /* contact-- */
+.contact {
+  background: url(../image/contact-bgi@2x.jpg) center / cover;
+  height: 800px;
+}
+.contact-container {
+  max-width: 1000px;
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.contact h3 {
+  text-align: right;
+}
+.contact h4 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "メイリオ";
+  margin: 80px 0;
+}
+.contact p a {
+  display: inline-block;
+  width: 300px;
+  height: 80px;
+  background-color: #F7D43F;
+  border-radius: 40px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #000;
+  line-height: 80px;
+  transition: 0.2s;
+}
+.contact p a:hover {
+  background-color: #887522;
+  color: #fff;
+}
+.contact span {
+  position: absolute;
+  bottom: 40px;
+  left: -40px;
+}
+  /* --/contact */
+
+/* --/main */
+
+
+
+/* footer-- */
+footer {
+  height: 100px;
+  text-align: center;
+}
+footer p {
+  font-size: 1.5rem;
+  padding-top: 50px;
+}
+/* --/footer */
+
+
+
+
+@media screen and (max-width: 1000px) {
+  header {
+    height: 800px;
+  }
+  h1 a {
+    margin-left: 50px;
+  }  
+  nav ul {
+    padding-right: 10px;
+  }
+  nav a {
+    padding: 8px 8px;
+  }
+  .first-view {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .first-view h2 {
+    font-size: 4rem;
+    white-space: nowrap;
+  }
+  .first-view p {
+    font-size:2.5rem;
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+  .content-title-odd span {
+    font-size: 4rem;
+  }
+  .content-title-even span {
+    font-size: 4rem;
+  }
+  .concept-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .concept-container p {
+    width: 100%;
+    padding: 0 30px 20px;
+    font-size: 1.2rem;
+  }
+  .works {
+    height: 1300px;
+  }
+  .works-wrapper {
+    height:1195px;
+  }
+  .works .content-title-even {
+    position: absolute;
+    bottom: 40px;
+    left: 10px;
+  }
+  .contact span {
+    position: absolute;
+    bottom: 80px;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body.noscroll {
+    overflow: hidden;
+  }
+  h1 a {
+    margin-left: 20px;
+  }  
+  h3 {
+    font-size: 2.2rem;
+  }
+  h3::after {
+    height: 4px;
+    width: 100px;
+    margin: 0 0 15px 15px;
+  }
+  .title_nav {
+    background-color: #2B2F33;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 5;
+  }
+  .burger {
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+  .drop {
+    z-index: 6;
+  }
+  .burger span {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  .burger span:nth-child(1) {
+    top: 0;
+    transition: .2s
+  }
+  .burger span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%)
+  }
+  .burger span:nth-child(3) {
+    bottom: 0;
+    transition: .2s;
+  }
+  .drop span:nth-child(1) {
+    top: 50%;
+    transform: rotate(135deg) translateY(75%);
+  }
+  .drop span:nth-child(2) {
+    opacity: 0;
+  }
+  .drop span:nth-child(3) {
+    bottom: 50%;
+    transform: rotate(-135deg) translateY(-75%);
+  }
+  nav ul {
+    display: none;
+  }
+  .title_nav ul {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    top:0;
+    left: 0;
+    padding-top: 180px;
+    padding-right: 0;
+    background-color: #2B2F33;
+    text-align: center;
+  }
+  .title_nav ul li a {
+    display: inline-block;
+    margin: 20px 0;
+  }
+  .fadein, .head-fadein {
+    display: none;
+  }
+  .first-view {
+    width: 100%;
+    top: 35%;
+  }
+  .first-view h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: 0;
+  }
+  .first-view p {
+    font-size: 2rem;
+    padding-top: 3rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+  }
+  section {
+    padding: 80px 0 100px;
+  }
+  .content-title-odd span {
+    font-size: 3rem;
+  }
+  .content-title-even span {
+    font-size: 3rem;
+  }
+  .concept h4 {
+    font-size: 1.2rem;
+    margin: 30px 0 25px;
+  }
+  .concept-container p {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 0 20px;
+    font-size: 1rem;
+  }
+  .concept-container img {
+    width: 100%;
+  }
+  .works {
+    height: 1400px;
+    background: url(../image/works-bgi@2x.jpg) no-repeat center / cover;
+  }
+  .works-wrapper {
+    height:1320px;
+  }
+  .works-container {
+    margin-top: 30px;
+  }
+  .works .button {
+    margin-top: 20px;
+  }
+  .works .button a {
+    height: 50px;
+    width: 200px;
+    border-radius: 25px;
+  }
+  .service {
+    padding-bottom: 40px;
+    position: relative;
+  }
+  .service h3 {
+    margin-bottom: 30px;
+  }
+  .service ul {
+    width: 100%;
+    position: static;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+  .service li {
+    height: 230px;
+  }
+  .service li a {
+    height: 230px;
+    font-size: 1.8rem;
+  }
+  .service .content-title-odd {
+    padding-top: 40px;
+    text-align: right;
+  }
+  .contact {
+    height: 400px;
+  }
+  .contact-container {
+    height: 300px;
+  }
+  .contact h4 {
+    font-size: 1.3rem;
+    margin: 40px 0;
+  }
+  .contact p a {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    line-height: 50px;
+  }
+  .contact span {
+    bottom: 20px;
+    left: 20;
+  }footer {
+    height: 80px;
+    text-align: center;
+  }
+  footer p {
+    font-size: 1rem;
+    padding-top: 40px;
+  }
+}
